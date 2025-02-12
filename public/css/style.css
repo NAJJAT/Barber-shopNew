@@ -1,0 +1,94 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light grey background */
+  color: #333; /* Dark text color */
+}
+
+/* Header Styling */
+header {
+  background-color: #333; /* Dark header background */
+  color: #fff; /* White text */
+  padding: 10px 0;
+}
+
+header nav {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the nav */
+  padding: 0 20px; /* Side padding */
+}
+
+header nav ul {
+  list-style: none; /* Remove bullets from list */
+  display: flex; /* Horizontal list */
+  justify-content: flex-start; /* Align left */
+}
+
+header nav ul li {
+  margin-right: 20px; /* Space between links */
+}
+
+header nav ul li a {
+  color: #fff; /* White text for links */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text */
+}
+
+header nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Main Content Styling */
+main {
+  max-width: 800px; /* Max width for content */
+  margin: 20px auto; /* Center the content */
+  padding: 20px; /* Padding for content */
+  background: #fff; /* White background for content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center; /* Center the footer text */
+  padding: 10px 0; /* Padding for footer */
+  background-color: #333; /* Dark footer background */
+  color: #fff; /* White text */
+  position: relative; /* Allow positioning */
+  bottom: 0; /* Align to bottom */
+  width: 100%; /* Full width */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  header nav ul {
+      flex-direction: column; /* Stack links vertically on small screens */
+      align-items: center; /* Center items */
+  }
+
+  header nav ul li {
+      margin: 10px 0; /* Space between links vertically */
+  }
+}
+
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Importing Google Fonts - Poppins */

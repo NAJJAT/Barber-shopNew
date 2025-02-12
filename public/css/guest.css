@@ -1,0 +1,260 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background */
+    color: #343a40; /* Text color */
+}
+
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+/* Header and Navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Centered Main Content */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Form Styles */
+.wrapper {
+    background: #fff;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.wrapper form .row {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.wrapper form .row i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.wrapper form .row input[type="text"],
+.wrapper form .row input[type="password"] {
+    width: 87%;
+    padding: 12px 15px 12px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.wrapper form .row input[type="text"]:focus,
+.wrapper form .row input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Forgot Password */
+.wrapper .pass {
+    text-align: right;
+    font-size: 14px;
+}
+
+.wrapper .pass a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.wrapper .pass a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.wrapper form .button input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper form .button input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Error Message */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Signup Link */
+.signup-link {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+
+.form-container {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Form Heading */
+.form-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Label Styling */
+.form-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #555;
+    text-align: left;
+}
+
+/* Input Fields */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Error Messages */
+.form-container .error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Button */
+.form-container .primary-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form-container .primary-button:hover {
+    background-color: #45a049;
+}
+
+/* Flex Container for Bottom Alignment */
+.flex.items-center.justify-end {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
